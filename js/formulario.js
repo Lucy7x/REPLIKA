@@ -44,7 +44,7 @@
     ],
     /* Agosto */ [
       { nome: "Alma desafiadora", texto: "Nunca aceitou um “não” sem testar a porta. Muitas portas já testaram de volta." },
-      { nome: "Alma latente",     t: "Algo grande dorme dentro dela. Ainda não se sabe se vai despertar como milagre ou como desastre." }
+      { nome: "Alma latente",     texto: "Algo grande dorme dentro dela. Ainda não se sabe se vai despertar como milagre ou como desastre." }
     ],
     /* Setembro */ [
       { nome: "Alma carinhosa", texto: "Abraça rápido e solta devagar. Dá mais do que pode e depois não sabe pedir." },
@@ -53,7 +53,7 @@
     ],
     /* Outubro */ [
       { nome: "Alma iluminada", texto: "Vê o que os outros ainda não aprenderam a temer. Esse conhecimento raramente traz paz." },
-      { nome: "Alma vazia",     t: "Não há nada ali e, por isso, cabe tudo. Cuidado com o que vier a preenchê-la." }
+      { nome: "Alma vazia",     texto: "Não há nada ali e, por isso, cabe tudo. Cuidado com o que vier a preenchê-la." }
     ],
     /* Novembro */ [
       { nome: "Alma em luto",   texto: "Carrega alguém que já se foi. Cada passo é um enterro adiado." },

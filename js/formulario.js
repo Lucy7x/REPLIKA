@@ -81,17 +81,17 @@
 
   // Perguntas (usadas no print e no .txt)
   const PERGUNTAS = {
-    quem:   { romano: "I",   rotulo: "Quem você é",                                        comentario: "Todos respondem com um nome. Poucos respondem com a verdade. Ambos serão lembrados, só que de formas diferentes." },
-    objetivo:  { romano: "II",  rotulo: "Seu objetivo",                                       comentario: "Os deuses também começaram com um desejo. O de alguns apodreceu antes mesmo de a coroa chegar." },
-    nunca: { romano: "III", rotulo: "Algo que nunca faria, exceto em situações extremas", comentario: "Aqui, “nunca” dura até a primeira fome de verdade. Seja honesto: a lista é mais curta do que você imagina." },
-    medo: { romano: "IV", rotulo: "Do que você tem medo?", comentario: "O medo é a única honestidade que sobrevive à fome. Diga o seu antes que alguém o descubra por você." },
+    quem:   { romano: "I",   rotulo: "Quem você é",                                        comentario: "Todos respondem com um nome e poucos respondem com a verdade. Ambos serão lembrados, só que de formas diferentes." },
+    objetivo:  { romano: "II",  rotulo: "Seu objetivo",                                       comentario: "Os deuses também começaram com um desejo." },
+    nunca: { romano: "III", rotulo: "Algo que nunca faria, exceto em situações extremas", comentario: "Aqui, “nunca” dura até você sentir fome de verdade. Seja honesto: a lista é mais curta do que você imagina." },
+    medo: { romano: "IV", rotulo: "Do que você tem medo?", comentario: "O medo é a única coisa capaz de sobrepujar a fome. Diga o seu antes que alguém o descubra por você." },
     arrependimento: { romano: "V", rotulo: "Qual é o seu maior arrependimento?", comentario: "Todo mundo carrega um. Os que dizem que não carregam dois." },
     deixouParaTras: { romano: "VI", rotulo: "Quem você deixou para trás?", comentario: "Quem fica raramente esquece. Quem vai embora, às vezes, também não." },
-    poder: { romano: "VII", rotulo: "O que você faria por poder?", comentario: "Toda coroa tem um preço. Pergunte-se quem já o pagou antes de você." },
-    recuperar: { romano: "VIII", rotulo: "O que você pegaria de volta, se pudesse?", comentario: "O que se perde não volta como era. Mas dá para tentar mesmo assim." },
-    morte: { romano: "IX", rotulo: "Como você acha que vai morrer?", comentario: "Ninguém acerta. Mas quase todos têm um palpite, e é ele que ronda." },
-    nascimento:  { romano: "X",   rotulo: "Quando você nasceu",                                 comentario: "A data não é vaidade. É o primeiro registro da sua alma, o único que você não escolheu." },
-    cor: { romano: "XI",  rotulo: "A cor da sua alma",                                  comentario: "Não existe resposta errada. Existe a que você hesita em dizer, e é provavelmente essa." }
+    poder: { romano: "VII", rotulo: "O que você faria por poder?", comentario: "Toda glória, por menor que seja, tem um preço." },
+    recuperar: { romano: "VIII", rotulo: "O que você pegaria de volta, se pudesse?", comentario: "O que se perde não volta como era antes. Mas dá para tentar mesmo assim." },
+    morte: { romano: "IX", rotulo: "Como você acha que vai morrer?", comentario: "Ninguém acerta. Mas quase todos têm um palpite, e é ele que ronda sua mente desde o dia do seu nascimento." },
+    nascimento:  { romano: "X",   rotulo: "Quando você nasceu",                                 comentario: "Esse é o primeiro registro da sua alma." },
+    cor: { romano: "XI",  rotulo: "A cor da sua alma",                                  comentario: "Não existe resposta errada." }
   };
   // Perguntas de resposta escrita, na ordem em que aparecem
   const CAMPOS_TEXTO = ["quem", "objetivo", "nunca", "medo", "arrependimento", "deixouParaTras", "poder", "recuperar", "morte"];

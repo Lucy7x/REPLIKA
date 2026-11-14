@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registro de Almas · Perímetro RPG</title>
+<meta name="description" content="Formulário de criação de personagem de Perímetro RPG, universo Replika.">
+<meta name="theme-color" content="#15141a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/estilo.css">
+</head>
+<body>
+
+<div class="faixa faixa-topo" aria-hidden="true"><div class="trilho" id="trilhoTopo"></div></div>
+
+<main class="moldura" id="moldura">
+  <i class="losango te"></i><i class="losango td"></i><i class="losango be"></i><i class="losango bd"></i>
+
+  <header class="cabecalho">
+    <img class="logo" src="styles/logo.png" alt="REPLIKA">
+    <h1>Registro de Almas</h1>
+    <p class="sobretitulo"></p>
+    <div class="filete"><i></i><b></b><i></i></div>
+  </header>
+
+  <section class="historia" aria-label="Sobre as almas">
+    <p class="capitular">Toda pessoa nasce com uma alma designada, uma essência que a acompanha desde o primeiro instante de sua existência. Existem inúmeras classificações conhecidas, embora poucas tenham sido reveladas até o momento. Cada uma representa uma natureza particular da alma, uma característica fundamental cuja influência se estende ao longo da vida de seu portador.</p>
+    <p>Sua influência manifesta-se de maneiras sutis, quase imperceptíveis. Pode surgir em pequenas decisões, em sonhos recorrentes, em desejos difíceis de explicar ou em tendências que acompanham alguém durante toda a vida. São vestígios de uma natureza que existe antes mesmo de a pessoa compreender a si mesma, mas cuja expressão depende das experiências, das escolhas e das circunstâncias que encontra pelo caminho.</p>
+    <p>Em casos excepcionais, a natureza da alma também pode influenciar a ascensão à divindade. Quando um indivíduo atravessa as provações necessárias para transcender sua condição mortal, sua essência pode participar da forma que essa transformação assume. A natureza divina que manifesta, sua aparência e até mesmo certos aspectos de seus poderes podem carregar traços da alma que possuía em vida.</p>
+    <p>O tipo de alma de uma pessoa é determinado principalmente pela sua data de nascimento, assim como os signos do zodíaco no mundo real. As 28 almas são distribuídas de forma desigual entre os meses.</p>
+  </section>
+
+  <form id="formulario" novalidate autocomplete="off">
+
+    <section class="painel" id="p-quem">
+      <label class="barra" for="quem"><span>I</span> Quem você é<em>/</em></label>
+      <div class="corpo">
+        <textarea id="quem" name="quem" rows="3" maxlength="600" placeholder="Um nome, um ofício, uma história que você contaria à luz de uma vela…"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Todos respondem com um nome e poucos respondem com a verdade. Ambos serão lembrados, só que de formas diferentes.</p>
+    </section>
+
+    <section class="painel" id="p-objetivo">
+      <label class="barra" for="objetivo"><span>II</span> Seu objetivo<em>/</em></label>
+      <div class="corpo">
+        <textarea id="objetivo" name="objetivo" rows="3" maxlength="600" placeholder="O que você quer, de verdade?"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Os deuses também começaram com um desejo.</p>
+    </section>
+
+    <section class="painel" id="p-nunca">
+      <label class="barra" for="nunca"><span>III</span> Algo que nunca faria, exceto em situações extremas<em>/</em></label>
+      <div class="corpo">
+        <textarea id="nunca" name="nunca" rows="3" maxlength="600" placeholder="Uma linha que você não cruza… até a fome falar mais alto."></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Aqui, “nunca” dura até você sentir fome de verdade. Seja honesto: a lista é mais curta do que você imagina.</p>
+    </section>
+
+    <section class="painel" id="p-medo">
+      <label class="barra" for="medo"><span>IV</span> Do que você tem medo?<em>/</em></label>
+      <div class="corpo">
+        <textarea id="medo" name="medo" rows="3" maxlength="600" placeholder="Algo que te paralisa, ou que você finge não temer…"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">O medo é a única coisa capaz de sobrepujar a fome. Diga o seu antes que alguém o descubra por você.</p>
+    </section>
+
+    <section class="painel" id="p-arrependimento">
+      <label class="barra" for="arrependimento"><span>V</span> Qual é o seu maior arrependimento?<em>/</em></label>
+      <div class="corpo">
+        <textarea id="arrependimento" name="arrependimento" rows="3" maxlength="600" placeholder="O que você desfaria, se pudesse…"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Todo mundo carrega um. Os que dizem que não carregam dois.</p>
+    </section>
+
+    <section class="painel" id="p-deixouParaTras">
+      <label class="barra" for="deixouParaTras"><span>VI</span> Quem você deixou para trás?<em>/</em></label>
+      <div class="corpo">
+        <textarea id="deixouParaTras" name="deixouParaTras" rows="3" maxlength="600" placeholder="Uma pessoa, um nome, um rosto que você evita lembrar…"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Quem fica raramente esquece. Quem vai embora, às vezes, também não.</p>
+    </section>
+
+    <section class="painel" id="p-poder">
+      <label class="barra" for="poder"><span>VII</span> O que você faria por poder?<em>/</em></label>
+      <div class="corpo">
+        <textarea id="poder" name="poder" rows="3" maxlength="600" placeholder="Até onde você iria?"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Toda glória, por menor que seja, tem um preço.</p>
+    </section>
+
+    <section class="painel" id="p-recuperar">
+      <label class="barra" for="recuperar"><span>VIII</span> O que você pegaria de volta, se pudesse?<em>/</em></label>
+      <div class="corpo">
+        <textarea id="recuperar" name="recuperar" rows="3" maxlength="600" placeholder="Um objeto, uma pessoa, um dia…"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">O que se perde não volta como era antes. Mas dá para tentar mesmo assim.</p>
+    </section>
+
+    <section class="painel" id="p-morte">
+      <label class="barra" for="morte"><span>IX</span> Como você acha que vai morrer?<em>/</em></label>
+      <div class="corpo">
+        <textarea id="morte" name="morte" rows="3" maxlength="600" placeholder="Todo mundo tem um palpite…"></textarea>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Ninguém acerta. Mas quase todos têm um palpite, e é ele que ronda sua mente desde o dia do seu nascimento.</p>
+    </section>
+
+    <div class="divisor" aria-hidden="true"><span>perguntas extras</span></div>
+
+    <section class="painel" id="p-nascimento">
+      <div class="barra" id="rotuloNascimento"><span>X</span> Quando você nasceu<em>/</em></div>
+      <div class="corpo">
+        <p class="dica-campo">Informe a data de nascimento do seu personagem. O mês em que ele nasceu define quais almas podem ser a dele.</p>
+        <input type="date" id="nascimento" name="nascimento" min="0001-01-01" max="9999-12-31" aria-labelledby="rotuloNascimento">
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">A data não é vaidade. Esse é o primeiro registro da sua alma, o único que você pode escolher.</p>
+
+      <div class="revelacao" id="revelacao" hidden>
+        <p class="revelacao-titulo" id="tituloRevelacao"></p>
+        <p class="revelacao-sub" id="subRevelacao"></p>
+        <div class="almas" role="radiogroup" aria-labelledby="tituloRevelacao" id="almas"></div>
+        <p class="erro" role="alert" id="erroAlma"></p>
+      </div>
+    </section>
+
+    <section class="painel" id="p-cor">
+      <div class="barra" id="rotuloCor"><span>XI</span> A cor da sua alma<em>/</em></div>
+      <div class="corpo">
+        <div class="linha-cor">
+          <div class="cores" role="radiogroup" aria-labelledby="rotuloCor" id="cores"></div>
+          <div class="orbe-area">
+            <div class="orbe" id="orbe" aria-hidden="true"></div>
+            <p class="orbe-nome" id="orbeNome">escolha uma cor</p>
+            <label class="personalizada">
+              <input type="color" id="corPersonalizada" value="#6a5acd" aria-label="Escolher outra cor">
+              <span>outra cor</span>
+            </label>
+          </div>
+        </div>
+        <p class="erro" role="alert"></p>
+      </div>
+      <p class="comentario">Não existe resposta errada.</p>
+    </section>
+
+    <div class="acoes">
+      <button type="submit" class="selo">Selar registro</button>
+      <p class="dica">Nada sai do seu navegador. O registro só existe aqui, até você copiá-lo ou baixá-lo.</p>
+    </div>
+  </form>
+
+  <section class="ficha" id="ficha" hidden aria-live="polite">
+    <p class="sobretitulo">Registro selado</p>
+    <h2 id="fichaTitulo">—</h2>
+    <div class="filete"><i></i><b></b><i></i></div>
+
+    <div class="alma-resumo" id="fichaAlma">
+      <div class="orbe orbe-p" id="fichaOrbe" aria-hidden="true"></div>
+      <div>
+        <p class="alma-nome" id="fichaAlmaNome"></p>
+        <p class="alma-comentario" id="fichaAlmaComentario"></p>
+        <p class="detalhes" id="fichaDetalhes"></p>
+      </div>
+    </div>
+
+    <dl class="respostas" id="respostas"></dl>
+
+    <div class="acoes linha">
+      <button type="button" class="botao" id="btnCopiar">Copiar registro</button>
+      <button type="button" class="botao" id="btnBaixarPng">Baixar print</button>
+      <button type="button" class="botao" id="btnBaixarTxt">Baixar .txt</button>
+      <button type="button" class="botao discreto" id="btnEditar">Voltar e editar</button>
+      <button type="button" class="botao discreto" id="btnNovo">Novo registro</button>
+    </div>
+    <p class="dica" id="msgCopiar" role="status"></p>
+  </section>
+
+  <footer class="rodape">Perímetro RPG · universo Replika</footer>
+</main>
+
+<div class="faixa faixa-base" aria-hidden="true"><div class="trilho" id="trilhoBase"></div></div>
+
+<script src="js/logo-dados.js"></script>
+<script src="js/formulario.js"></script>
+</body>
+</html>
